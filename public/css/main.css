@@ -1,0 +1,384 @@
+
+h1{ /* Page Titles */
+    font-family: "Sofia", sans-serif;
+    margin-top: 8vw;
+    margin-left: 15vw;
+    font-size: 50px;
+    color: black;
+
+}
+
+h2{ /* Small Titles */
+    font-family: "Sofia", sans-serif;
+    color: black;
+}
+
+h3{ /* Smaller Titles */
+    font-family: "Arima Madurai", cursive;
+    font-size: 18px;
+}
+
+h4{ /* Sana's Nails */
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    font-size: 13vw;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0;
+    
+}
+
+h5{ /* Slogan */
+    text-align: center;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 2vw;
+    color: black;
+    margin-top: -1vw;
+    padding-top: 0;
+}
+
+h6{
+    font-family: "Arima Madurai", cursive;
+    color: rgb(169, 92, 104);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+p{
+    font-family: "Tenor Sans", sans-serif;
+    text-align: justify;
+    color: black;
+}
+
+body{
+    background-color: rgb(243, 238, 235);
+}
+
+/*------------------------------------------------------------------------*/
+/*--- NAV BAR ---*/
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-family: "Pompiere", cursive;
+    font-size: 25px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 5;
+}
+
+li a:hover{
+    /*background-color: rgb(255, 170, 180);*/
+    color: rgb(255, 130, 180);
+    text-decoration: none;
+    /*: 2px 4px 6px rgb(255, 255, 255);*/
+}
+
+.active{
+    text-shadow: 2px 4px 6px rgb(255, 130, 180);
+}
+
+/*------------------------------------------------------------------------*/
+/*--- HOME ---*/
+
+.title_main{
+    background-image: url('/img/back.jpg'); 
+    background-size: 100%; 
+    top:0; 
+    left:0; 
+    margin: 0; 
+    padding-top: 20%; 
+    padding-bottom: 20%;
+}
+
+.half{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.col-sm-6 h2{
+   color: black;
+   text-align: center;
+   border: 0.2vw solid black; 
+
+   font-size: 4vw;
+   padding: 5%; 
+   margin: 10%; 
+   width: 38vw;
+}
+
+.col-sm-6 h5{
+    padding-bottom: 4vw; 
+    text-align: justify; 
+    font-size: 1.3vw; 
+    width: 25vw; 
+    margin:auto; 
+    color: black;
+}
+
+div a{
+    display: block;
+    background-color: rgb(243, 238, 235);
+    padding: 1vw;
+    margin:auto;
+    margin-bottom: 3vw;
+
+    font-family: "Tenor Sans", sans-serif;
+    color: black;
+    font-size: 1.4vw;
+    text-decoration: none;
+    text-align: center;
+    width: 15vw;
+}
+
+div a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .title_main{
+        background-image: url('/img/back1.jpg'); 
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+
+    .col-sm-6{
+        background-image: url('/img/blocks/1.jpg');
+        background-size: 100%;
+        padding-top: 60%;
+        padding-bottom: 10%;
+    }
+    .col-sm-6 h2{
+        font-size: 6vw;
+        padding: 5vw; 
+        margin: auto; 
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        width: 80vw;
+        z-index: 4;
+    } 
+
+    .col-sm-6 h5{
+        font-size: 3vw;
+        width: 60vw; 
+        margin:auto; 
+    }
+
+    .col-sm-4 img{
+        display: none;
+    }
+    
+    .col-sm-2 img{
+        display: none;
+    }
+
+    div a{
+        font-size: 3vw;
+        width: 30vw;
+    }
+}
+
+/*------------------------------------------------------------------------*/
+/*--- SERVICES PAGE ---*/
+
+.services{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 630px;
+    
+}
+
+.info_image{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    height: 315px;
+    width: 630px;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    background-color: rgba(244, 239, 236, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.words{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.pic{
+    padding: 17px;
+}
+
+/*------------------------------------------------------------------------*/
+/*--- PORTFOLIO PAGE ---*/
+
+.card{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row1 {
+    margin-top: 50px;
+    background-color: rgb(222, 210, 194);
+    margin-bottom: 50px;
+}
+  
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .column {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgb(206, 165, 145);
+    width: 300px;
+    opacity: 0;
+
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+/*------------------------------------------------------------------------*/
+/*--- APPOINTMENTS ---*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+}
+  
+input[type=reset] {
+    background-color: rgb(206, 165, 145);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=reset]:hover {
+    background-color: rgb(169, 92, 104);
+}
+  
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*--- FOOTER ---*/
+
+.box{
+    background-color:rgb(222, 210, 194); 
+    float: left; 
+    margin: 3vw; 
+    margin-left: -7vw;
+    padding: 3vw; 
+    padding-bottom: 1vw;
+    width: 25vw;
+}
+
+.text{
+    padding: 4vw; 
+    margin-left: 30vw;
+}
+
+.text p{
+    color: black;
+    font-size: 1.4vw;
+    
+}
+
+.footerbutton{
+    display: block;
+    background-color: rgb(243, 238, 235);
+    padding: 0.5vw;
+    margin:auto;
+    margin-bottom: 3vw;
+
+    font-family: "Tenor Sans", sans-serif;
+    color: black;
+    font-size: 1.4vw;
+    text-decoration: none;
+    text-align: center;
+    width: 15vw;
+}
+
+@media screen and (max-width: 620px) {
+    .box {
+        height: 18vw;
+        margin: 1vw;
+        margin-left: -8vw;
+    }
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title> Sana's Nails </title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <header> 
+            <ul>
+                <li> <a href=".."> Home </a></li>
+                <li> <a href="services"> Services </a></li>
+                <li> <a class="active" href="appointments"> Appointments </a></li>
+                <li> <a href="portfolio"> Portfolio </a></li>
+            </ul>
+        </header>
+
+        <!--
+        <img src="img/logo.jpg" alt="Logo" style="width:150px;height:150px;padding-left:10px;padding-top:50px;">
+        -->
+
+        <h1> Schedule an Appointment! </h1>
+
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email">
+
+              <label for="pnum">Phone Number</label>
+              <input type="text" id="pnum" name="phonenumber" placeholder="Your phone number">
+          
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option value="gel">Gel Nail Polish</option>
+                <option value="dip">Dip Powder Nails</option>
+                <option value="acrylic">Acrylic Nails</option>
+              </select>
+          
+              <label for="appdate">Appointment Date</label>
+              <input type="date" id="appdate" name="appointmentdate" placeholder="Date" min="2021-08-01">
+
+              <label for="apptime">Appointment Time</label>
+              <input type="time" id="apptime" name="appointmenttime" placeholder="Time">
+              <p></p>
+              <input type="reset" onclick="alert('Form Submitted!')" value="Submit">
+          
+            </form>
+          </div>
+
+          <footer> 
+            <div class="container-fluid">
+                <div class="row" style="height: 20vw;">
+                    <div class="col-xs-4" style="background-color: white; height: 20vw;">
+                        <img src="img/this.jpg" alt="Logo" style="height: 20vw;">
+                    </div>
+                    <div class="col-xs-8" style="background-color: white; height: 20vw;">
+                        <div class="box">
+                            <h5> LEARN MORE </h5>
+                            <p style="font-size: 1vw;"> Click below to see the services I offer! </p>
+                            <div> <a style="padding: 0.5vw;" href="services"> SERVICES </a></div>
+                        </div>
+                        <div class="text">
+                            <p style="font-size: 2vw;"> CONTACT ME! </p>
+                            <p> email@gmail.com </p>
+                            <p> 123-456-7890 </p>
+                            <p> Location: 123 Main Street, TX, 71234 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
